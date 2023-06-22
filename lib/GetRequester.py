@@ -11,5 +11,5 @@ class GetRequester:
 
     def load_json(self):
         response_body = self.get_response_body()
-        return json.loads(response_body)  # Convert the response body to a Python object
+        return eval (response_body)  # Convert the response body to a Python object
 
